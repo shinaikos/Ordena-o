@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ordenação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <ul>
+            <li><a href="bubblesort.html">BubbleSort</a></li>
+            <li><a href="insertionsort.html">InsertionSort</a></li>
+            <li><a href="quicksort.html">QuickSort</a></li>
+            <li><a href="selectionsort.html">SelectionSort</a></li>
+            <li><a href="mergesort.html">MergeSort</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Quicksort </h1>
+
+        <p>O algoritmo quicksort é um método de ordenação muito rápido e eficiente, inventado por C.A.R. Hoare em 1960,
+            quando visitou a Universidade de Moscovo como estudante. Naquela época, Hoare trabalhou em um projeto de
+            tradução de máquina para o National Physical Laboratory.
+        </p>
+        <p> Ele criou o quicksort ao tentar traduzir um
+            dicionário de inglês para russo, ordenando as palavras, tendo como objetivo reduzir o problema original em
+            subproblemas que possam ser resolvidos mais fácil e rápido. Foi publicado em 1962 após uma série de
+            refinamentos</p>
+        <h2>Complexidade dos algoritmos QuickSort</h2>
+
+        <p>caso médio O(N * log N)</p>
+
+        <p>Esse método de ordenação divide-se em vários passos:</p>
+
+        <ul>
+            <li>Escolher para pivô o primeiro elemento da tabela (p=x[1])</li>
+            <li>Se os elementos de x forem rearranjados de forma a que o pivô (p) sejam colocados na posição j e
+                sejam respeitadas as seguintes condições:</li>
+            <ol>
+                <li>todos os elementos entre as posições 1 e j-1 são menores ou iguais que o pivô (p)</li>
+                <li>todos os elementos entre as posições j+1 e n são maiores que o pivô (p)Então p permanecerá na
+                    posição j no final do ordenamento.</li>
+            </ol>
+            <li>Se este processo for repetido para as sub-tabelas x[1] a x[j-1] e x[j+1] a x[n] e para todas as
+                sub-tabelas criadas nas iterações seguintes obteremos no final uma tabela ordenada.</li>
+        </ul>
+        <p>Portanto a parte mais difícil deste método é o procedimento parte que divide a tabela em 2 sub-tabelas
+            dependendo do pivô.</p><br><br>
+    </section>
+    <footer>
+        <p class="footer">
+            Criado por <a href="https://www.facebook.com/rodrigo.pires.399" target="_blank">Rodrigo Pires</a>.
+        </p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ordenação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <ul>
+            <li><a href="bubblesort.html">BubbleSort</a></li>
+            <li><a href="insertionsort.html">InsertionSort</a></li>
+            <li><a href="quicksort.html">QuickSort</a></li>
+            <li><a href="selectionsort.html">SelectionSort</a></li>
+            <li><a href="mergesort.html">MergeSort</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>insertion sort </h1>
+
+        <p>A ideia do insertion sort consiste em ordenar os itens, inserindo-os na posição corresponde da lista.
+            Imagine que você esteja comprando uma carta e que você já tenha algumas cartas na sua mão, as quais você já
+            fez o trabalho de ordenar corretamente. Você não sabe que carta virá, mas por motivos de organização para o
+            jogo, gostaria de manter a ordenação conforme as cartas vão para sua mão.
+        </p>
+        <p> No momento em que você saca uma
+            carta, o valor se torna a referência para você fazer a ordenação (chamaremos de “chave” daqui para a
+            frente) e então, começa a comparar o valor com as cartas da sua mão (começando da última carta à direita)
+            em direção à esquerda, até que encontre uma carta que seja maior ou igual à esta. Finalmente, você descobre
+            que posição esta carta deve ficar de acordo com a ordem das cartas. Porém, as outras cartas que já estão na
+            sua mão e são maiores precisam ser movidas para a direita para essa carta ser “encaixada” ou inserida
+            naquela posição.</p>
+        <h2>Complexidade de Algoritmos Insertion Sort </h2>
+
+        <p>Se o valor a ordenar possui n elementos, então o algoritmo realizará n – 1 etapas. Quantas comparações e
+            trocas serão realizadas? </p>
+
+        <ul>
+
+            <li>No melhor caso, vetor ordenado, serão realizadas 1 comparação e 1 troca por etapa, um total de (n-1)
+                comparações e (n-1) trocas. </li>
+
+            <li>No pior caso, vetor em ordem inversa, serão realizadas sucessivamente 1,2,3,... n1 comparações e
+                trocas.</li>
+
+        </ul>
+
+        <p>A soma dos termos dessa progressão aritmética será n²/2.
+
+            Pode ser demonstrado que para um vetor aleatório, o número aproximado de comparações e trocas é n²/4.
+
+            Portanto, a complexidade deste algoritmo é quadrática. </p>
+
+        <p>- T = O(n²). </p>
+
+        <p>No anel mais interno, na i-ésima iteração, o valor de Ci é: Melhor caso: Ci(número de comparações) = 1 Pior
+            caso: Ci(número de comparações) = i Caso médio: Ci(número de comparações) = 1/i(1 + 2 + ... + i) = (i+1)/2
+            Se todas as permutações de n são igualmente prováveis para o caso médio, então, o número de comparações é
+            igual a: Melhor caso: C(n) = (1 + 1 + ... + 1) = n - 1 Pior caso: C(n) = (2 + 3 + ... + n) = n2/2 + n/2 - 1
+            Caso médio: C(n) = 1/2(3 + 4 + ... + n+1) = n2/4 + 3n/4 – 1 O número de movimentações na i-ésima iteração é
+            igual a Mi(n) = Ci(n) – 1 + 3 = Ci(n) + 2 logo, o número de movimentos é igual a: Melhor caso: M(número de
+            elementos do arquivo) = (3 + 3 + ... + 3) = 3(n – 1) Pior caso: M(número de elementos do arquivo) = (4 + 5
+            + ... + n+2) = n2/2 + 5n/2 – 3 Caso médio: M(número de elementos do arquivo) = 1/2(5 + 6 + ... + n+3) =
+            n2/4 + 11n/4 – 3 Deste modo podemos concluir que: Melhor caso: O(n) Pior caso: O(n2) Caso médio: O(n2) O
+            menor número de comparações e trocas ocorre exatamente quando os elementos estão originalmente em ordem, e
+            o número máximo de comparações e trocas ocorre quando os itens estão originalmente na ordem oposta. Para
+            arquivos já ordenados o algoritmo descobre a um custo O(n) que cada item já está em seu lugar. Então, este
+            é o método a ser utilizado quando o arquivo está ordenado na sua origem. É também um método bom para
+            adicionar um pequeno conjunto de dados a um arquivo já ordenado, originando um outro arquivo ordenado, pois
+            neste caso o custo pode ser considerado linear</p><br><br>
+    </section>
+    <footer>
+        <p class="footer">
+            Criado por <a href="https://www.facebook.com/rodrigo.pires.399" target="_blank">Rodrigo Pires</a>.
+        </p>
+    </footer>
+
+</body>
+
+</html>

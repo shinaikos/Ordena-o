@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ordenação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <ul>
+            <li><a href="bubblesort.html">BubbleSort</a></li>
+            <li><a href="insertionsort.html">InsertionSort</a></li>
+            <li><a href="quicksort.html">QuickSort</a></li>
+            <li><a href="selectionsort.html">SelectionSort</a></li>
+            <li><a href="mergesort.html">MergeSort</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Selection Sort</h1>
+
+        <p>Selection Sort sua ideia consiste em ordenar a lista “selecionando” a cada iteração o menores itens
+            possíveis e os colocam da esquerda para a direita.</p>
+
+        <p>Assim como o Bubble Sort, é necessário para cada item da lista percorrê-la toda (logo, serão necessários
+            dois loops: um para cada elemento da lista e outro para cada um desses elementos percorrer toda a lista).</p>
+
+        <p>Suas principais vantagens estão na fácil implementação do algoritmo, além de ocupar pouca memória se
+            comparado a algoritmos como quick e merge sort que utilizam a estratégia de “dividir e conquistar” .</p>
+
+        <p>A desvantagem é que um dos algoritmos de maior tempo de execução em todos os casos , o que o torna uma opção
+            ruim para listas com um grande número de itens.</p>
+
+        <h2>Complexidade de Algoritmos Selection Sort </h2>
+
+        <p>A operação entre as chaves é feita no loop k, para cada valor de i são realizadas (i-1) comparações no loop,
+            como i varia de 2 até n, o número total de comparações para ordenar a lista toda é que para qualquer valor
+            de i existe no máximo uma troca, se no caso a lista já estiver ordenada não ocorre troca. Pior caso existe
+            uma troca para cada loop de k (n-1) para cada troca exige três movimentos. O algoritmo de seleção é
+            considerado um dos mais simples, além disso, possui uma característica eficiente quanto à quantidade de
+            movimentações de registros, com um tempo de execução linear no tamanho de entrada. Geralmente é utilizado
+            para arquivos de registros maiores com até 1000 registros. </p>
+
+        <p>- T = O(n²) </p>
+
+        <p>O fato de o conjunto já estar ordenado não ajuda em nada. O algoritmo não é estável, isto é, os registros
+            com chaves iguais nem sempre irão manter a mesma posição relativa de antes do início da ordenação.</p><br><br>
+
+
+    </section>
+    <footer>
+        <p class="footer">
+            Criado por <a href="https://www.facebook.com/rodrigo.pires.399" target="_blank">Rodrigo Pires</a>.
+        </p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ordenação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+</head>
+
+<body>
+    <script src="js/main.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/exporting.js"></script>
+    <script src="js/export-data.js"></script>
+    <input type="text" id="quicka" hidden><input type="text" id="quickb" hidden><input type="text" id="quickc" hidden><input
+        type="text" id="mergea" hidden><input type="text" id="mergeb" hidden><input type="text" id="mergec" hidden><input
+        type="text" id="selectiona" hidden><input type="text" id="selectionb" hidden><input type="text" id="selectionc"
+        hidden><input type="text" id="insertiona" hidden><input type="text" id="insertionb" hidden><input type="text"
+        id="insertionc" hidden><input type="text" id="bubblea" hidden><input type="text" id="bubbleb" hidden><input
+        type="text" id="bubblec" hidden>
+    <nav>
+        <a href="index.html">Home</a>
+        <ul>
+            <li><a href="bubblesort.html">BubbleSort</a></li>
+            <li><a href="insertionsort.html">InsertionSort</a></li>
+            <li><a href="quicksort.html">QuickSort</a></li>
+            <li><a href="selectionsort.html">SelectionSort</a></li>
+            <li><a href="mergesort.html">MergeSort</a></li>
+        </ul>
+    </nav>
+    <main>
+        <button onclick="BubbleSort()">BubbleSort</button> <br>
+        <button onclick="insertionSort()">insertionSort</button> <br>
+        <button onclick="quickSort()">quickSort</button> <br>
+        <button onclick="selectionSort()">selectionSort</button> <br>
+        <button onclick="mergeSort()">mergeSort</button> <br>
+        <button onclick="window.onload()">Gerar grafico</button>
+    </main>
+    <br id="quebra">
+
+    <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+
+<div id="quebra"></div>
+    <footer>
+        <p class="footer">
+            Criado por <a href="https://www.facebook.com/rodrigo.pires.399" target="_blank">Rodrigo Pires</a>.
+        </p>
+    </footer>
+
+</body>
+<script src="js/bubblesort.js"></script>
+<script src="js/insertionsort.js"></script>
+<script src="js/quicksort.js"></script>
+<script src="js/selectionsort.js"></script>
+<script src="js/mergesort.js"></script>
+
+
+</html>

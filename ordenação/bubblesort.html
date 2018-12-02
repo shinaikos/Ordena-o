@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ordenação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <ul>
+            <li><a href="bubblesort.html">BubbleSort</a></li>
+            <li><a href="insertionsort.html">InsertionSort</a></li>
+            <li><a href="quicksort.html">QuickSort</a></li>
+            <li><a href="selectionsort.html">SelectionSort</a></li>
+            <li><a href="mergesort.html">MergeSort</a></li>
+        </ul>
+    </nav>
+    <section>
+
+        <h1> Bubble Sort </h1>
+        <p>
+            Bubble Sort é um algoritmo de ordenação que pode ser aplicado em Arrays e Listas dinâmicas. Se o objetivo é
+            ordenar os valores em forma decrescente, então, a posição atual é comparada com a próxima posição e, se a
+            posição atual for maior que a posição posterior, é realizada a troca dos valores nessa posição. Caso
+            contrário, não é realizada a troca, apenas passa-se para o próximo par de comparações.
+        </p>
+        <p>
+            Se o objetivo é ordenar os valores em forma crescente, então, a posição atual é comparada com a próxima
+            posição e, se a posição atual for menor que a posição posterior, é realizada a troca. Caso contrário, a
+            troca não é feita e passa-se para o próximo par de comparação.
+        </p>
+        <p>
+            Um array ou lista pode estar já ordenado no momento em que se solicita a ordenação, dessa forma, esta
+            situação tem de ser considerada na implementação do algoritmo.
+        </p>
+
+        <h2>Complexidade de Algoritmos Bubble Sort </h2>
+
+        <p>As operações de comparações e de troca de posição de elementos são executadas no Pior Caso, o algoritmo
+            realizará n-1 troca para o primeiro passo, depois n-2 trocas para o segundo elemento e assim
+            sucessivamente. Trocas = n-1+n-2+n-3...+2+1 aproximadamente n2 trocas. No Melhor Caso, nenhuma troca
+            será realizada, pois em ambos os casos o algoritmo faz da ordem n comparações.
+
+            <p>Complexidade no tempo: Comportamento do algoritmo no tempo, em função do tamanho da entrada.</p>
+
+            <p> Complexidade no espaço: Consumo de memória do algoritmo, em função do tamanho da entrada.</p>
+
+            <p>O tempo gasto na execução do algoritmo varia em ordem quadrática em relação ao número de elementos a
+                serem ordenados. </p>
+
+            <p>- T = O (n²) – Notação “Big O”</p>
+
+            <p> - Atividades mais custosas:</p>
+
+            <ul>
+
+                <li>Comparações</li>
+
+                <li>Troca de Posição (swap)</li>
+
+                <p>Melhor caso: Vetor Ordenado.</p>
+
+                <p>Pior caso: Vetor invertido.</p>
+                <br><br>
+    </section>
+    <footer>
+        <p class="footer">
+            Criado por <a href="https://www.facebook.com/rodrigo.pires.399" target="_blank">Rodrigo
+                Pires</a>.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

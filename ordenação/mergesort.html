@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ordenação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <ul>
+            <li><a href="bubblesort.html">BubbleSort</a></li>
+            <li><a href="insertionsort.html">InsertionSort</a></li>
+            <li><a href="quicksort.html">QuickSort</a></li>
+            <li><a href="selectionsort.html">SelectionSort</a></li>
+            <li><a href="mergesort.html">MergeSort</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Mergesort </h1>
+
+        <p> Mergesort Sua ideia básica consiste em Dividir (o problema em vários subproblemas e resolver esses
+            subproblemas através da recursividade) e Conquistar (após todos os subproblemas terem sido resolvidos
+            ocorre a conquista que é a união das resoluções dos subproblemas).
+        </p>
+        <p> O algoritmo Merge Sort usa a
+            recursividade, há um alto consumo de memória e tempo de execução, tornando esta técnica não muito eficiente
+            em alguns problemas. Tem como desvantagem a Utilização de funções recursivas; Gasto extra de memória.</p>
+        <h2>Complexidade dos algoritmos Merge Sort</h2>
+
+        <p>Primeiramente vamos definir o que é melhor, médio e pior caso para o MergeSort. Melhor Caso – nunca é
+            necessário trocar após comparações.
+
+            Médio Caso – há necessidade de haver troca após comparações.
+
+            Pior Caso – sempre é necessário trocar após comparações. </p>
+
+        <p>Para o MergeSort não tem tanta importância se o vetor está no melhor, médio ou pior caso, porque para
+            qualquer que seja o caso ele sempre terá a complexidade de ordem n*logn, como pode ser verificado na tabela
+            abaixo: </p>
+        <table>
+            <tr>
+                <td>Melhor caso</td>
+                <td>O(n log2 n)</td>
+            </tr>
+            <tr>
+                <td>Médio caso</td>
+                <td>O(n log2 n)</td>
+            </tr>
+            <tr>
+                <td>Pior caso</td>
+                <td>O(n log2 n)</td>
+            </tr>
+        </table>
+        <p>Isso é pelo motivo de que o MergeSort independentemente em que situação se encontra o vetor, ele sempre irá
+            dividir e intercalar. </p>
+
+        <p>Na prática, é difícil (senão impossível) prever com rigor o tempo de execução de um algoritmo ou programa.
+        </p>
+
+        <p>O tempo vai depender de varias constantes, como por exemplo, o tempo de processamento de cada computador, do
+            algoritmo implementado. Desta maneira, nós não vamos apresentar aqui como é o calculo da análise de
+            complexidade do MergeSort</p><br><br>
+    </section>
+    <footer>
+        <p class="footer">
+            Criado por <a href="https://www.facebook.com/rodrigo.pires.399" target="_blank">Rodrigo Pires</a>.
+        </p>
+    </footer>
+
+</body>
+
+</html>
